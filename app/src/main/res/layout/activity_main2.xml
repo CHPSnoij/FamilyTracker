@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main2_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Welcome to Family Tracker!!"/>
+
+    <TextView
+        android:id="@+id/tv_main2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Please login with your family account"/>
+
+
+    <TextView
+        android:id="@+id/tv_main2_familyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Familyname"/>
+
+
+    <EditText
+        android:id="@+id/et_familyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_main2_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/et_main2_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <!--
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Password confirm"/>
+    android:id="@+id/tv_password_confirm"
+
+    <EditText
+        android:id="@+id/et_password_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+-->
+    <Button
+        android:id="@+id/bt_main2_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Login"/>
+
+    <Button
+        android:id="@+id/bt_main2_createnewfamilyaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Or create a new family account"/>
+
+</LinearLayout>
