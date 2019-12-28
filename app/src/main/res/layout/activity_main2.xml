@@ -39,7 +39,7 @@
         android:textSize="17sp"
         android:textColor="#000000"
         android:text="Familyname"/>
-
+    <!--todo: login with faamilyname or with mailaddress?-->
 
     <EditText
         android:id="@+id/et_familyname"
@@ -68,6 +68,7 @@
         android:layout_marginRight="50dp"
         android:background="@drawable/rectangle"
         android:hint="                                                             "/>
+    <!--todo: also use inputtype textPassword here?-->
 
     <!--
     <TextView
@@ -118,6 +119,8 @@
         android:textSize="20sp"
         android:textColor="#000000"
         android:text="Login"/>
+
+    <!--todo: add progressbar in here?-->
 
     <Button
         android:id="@+id/bt_main2_createnewfamilyaccount"
