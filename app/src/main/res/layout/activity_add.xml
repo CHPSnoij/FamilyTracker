@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/login3"
+        android:id="@+id/bt_add_determineaddress"
         android:layout_width="249dp"
         android:layout_height="37dp"
         android:layout_gravity="start"
@@ -17,7 +17,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="376dp"
         android:enabled="false"
-        android:text="determine adress on current location"
+        android:text="determine address on current location"
         android:textSize="10sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/username10"
+        android:id="@+id/et_add_01"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username5"
+        android:id="@+id/et_add_02"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -56,51 +56,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tv_add_birthday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Birthday"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.397" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tv_add_zipcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zipcode"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.685" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_add_street"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Street+house number"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.627" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tv_add_surname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Surname"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.338" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_add_firstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First name"
@@ -111,20 +111,20 @@
         tools:layout_editor_absoluteX="84dp" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_add_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="City"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/tv_add_firstname"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.569" />
 
     <EditText
-        android:id="@+id/username11"
+        android:id="@+id/et_add_03"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -139,7 +139,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username6"
+        android:id="@+id/et_add_04"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -154,7 +154,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username9"
+        android:id="@+id/et_add_05"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -169,7 +169,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username7"
+        android:id="@+id/et_add_06"
         android:layout_width="242dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
@@ -184,7 +184,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login2"
+        android:id="@+id/bt_add_add"
         android:layout_width="232dp"
         android:layout_height="40dp"
         android:layout_gravity="start"
@@ -199,7 +199,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
-        android:id="@+id/loading"
+        android:id="@+id/pb_add_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -213,7 +213,7 @@
         tools:layout_editor_absoluteX="206dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_add_avatar"
         android:layout_width="169dp"
         android:layout_height="167dp"
         app:layout_constraintEnd_toEndOf="parent"

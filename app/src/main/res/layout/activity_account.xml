@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/cl_account_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
     <EditText
-        android:id="@+id/password3"
+        android:id="@+id/et_account_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -22,10 +22,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_account_familyname" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_account_familyname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Familyname"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.296" />
 
     <EditText
-        android:id="@+id/password2"
+        android:id="@+id/et_account_familyname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -51,10 +51,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_account_familyname" />
 
     <EditText
-        android:id="@+id/password5"
+        android:id="@+id/et_account_confirmpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -67,10 +67,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_account_familyname" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_account_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin email adress"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.582" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_account_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.438" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_account_confirmpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password confirm"
@@ -109,6 +109,7 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <TextView
+        android:id="@+id/tv_account_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Here you can create a new family account"
@@ -121,7 +122,7 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/et_account_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -136,7 +137,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login2"
+        android:id="@+id/bt_account_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -151,7 +152,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
-        android:id="@+id/loading"
+        android:id="@+id/pb_account_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
