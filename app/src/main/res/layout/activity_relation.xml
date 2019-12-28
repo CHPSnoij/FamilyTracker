@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/cl_relation_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/tv_relation_pleaselogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please log in with your family account"
@@ -20,6 +20,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26" />
+
+    <!--comment out because of multiple duplicates
+
 
     <TextView
         android:id="@+id/textView24"
@@ -85,9 +88,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.284" />
+    -->
 
     <Button
-        android:id="@+id/login2"
+        android:id="@+id/bt_relation_addrelation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -100,11 +104,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_relation_pleaselogin"
         app:layout_constraintVertical_bias="0.2" />
 
     <Button
-        android:id="@+id/login2"
+        android:id="@+id/bt_relation_deleterelation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -117,12 +121,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_relation_pleaselogin"
         app:layout_constraintVertical_bias="0.2"
         tools:ignore="DuplicateIds" />
 
     <ProgressBar
-        android:id="@+id/loading"
+        android:id="@+id/pb_relation_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -132,22 +136,22 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/tv_relation_pleaselogin"
+        app:layout_constraintStart_toStartOf="@+id/tv_relation_pleaselogin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
     <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
+        android:id="@+id/cl_relation_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/iv_relation_avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintBottom_toTopOf="@+id/tv_relation_pleaselogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,6 +160,7 @@
         tools:ignore="MissingConstraints" />
 
     <ListView
+        android:id="@+id/lv_relation_list"
         android:layout_width="274dp"
         android:layout_height="149dp"
         android:background="#25657F86"
@@ -163,7 +168,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/tv_relation_pleaselogin"
         app:layout_constraintVertical_bias="0.158" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
