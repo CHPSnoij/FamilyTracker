@@ -161,9 +161,7 @@
         android:textColor="#000000"
         android:text="Add"/>
 
-
-
-<!--
+<!--todo: use progressbar in here?
 
 <ProgressBar
     android:id="@+id/pb_add_loading"
@@ -178,7 +176,6 @@
     app:layout_constraintVertical_bias="0.3"
     tools:ignore="MissingConstraints"
     tools:layout_editor_absoluteX="206dp" />
-
 -->
 
 </LinearLayout>
