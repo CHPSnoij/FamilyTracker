@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_main2_welcome"
+        android:id="@+id/tv_add2_create_member"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -17,32 +15,28 @@
         android:padding="20dp"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:text="Welcome to Family Tracker!!"/>
+        android:text="Create a new ....family member?"/>
+
+    <ImageView
+        android:id="@+id/iv_add_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        tools:srcCompat="@tools:sample/avatars[3]" />
 
     <TextView
-        android:id="@+id/tv_main2_login"
+        android:id="@+id/tv_add2_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Please login with your family account"/>
-
-
-    <TextView
-        android:id="@+id/tv_main2_familyname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:paddingLeft="40dp"
-        android:textSize="17sp"
-        android:textColor="#000000"
-        android:text="Familyname"/>
-    <!--todo: login with faamilyname or with mailaddress?-->
+        android:text="Firstname"/>
 
     <EditText
-        android:id="@+id/et_main2_familyname"
+        android:id="@+id/et_add2_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -51,38 +45,17 @@
         android:hint="                                                             "/>
 
     <TextView
-        android:id="@+id/tv_main2_password"
+        android:id="@+id/tv_add2_family_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Password"/>
+        android:text="Family name"/>
 
     <EditText
-        android:id="@+id/et_main2_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/rectangle"
-        android:hint="                                                             "/>
-    <!--todo: also use inputtype textPassword here?-->
-
-    <!--
-    <TextView
-        android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:paddingLeft="40dp"
-        android:textSize="17sp"
-        android:textColor="#000000"
-        android:text="Password"/>
-
-    <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_add2_family_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -91,46 +64,121 @@
         android:hint="                                                             "/>
 
     <TextView
+        android:id="@+id/tv_add2_dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Password confirm"/>
-    android:id="@+id/tv_password_confirm"
+        android:text="Date of birth"/>
 
     <EditText
-        android:id="@+id/et_password_confirm"
+        android:id="@+id/et_add2_dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:background="@drawable/rectangle"
         android:hint="                                                             "/>
+
+    <Button
+        android:id="@+id/bt_add2_determine_address_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Determine address using current location"/>
+
+    <TextView
+        android:id="@+id/tv_add2_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="City"/>
+
+    <EditText
+        android:id="@+id/et_add2_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add2_street_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Street + house number"/>
+
+    <EditText
+        android:id="@+id/et_add2_street_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add2_zip_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="ZIP code"/>
+
+    <EditText
+        android:id="@+id/et_add2_zip_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <Button
+        android:id="@+id/bt_add2_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Add"/>
+
+
+
+<!--
+
+<ProgressBar
+    android:id="@+id/pb_add_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="64dp"
+    android:layout_marginBottom="64dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="206dp" />
+
 -->
-    <Button
-        android:id="@+id/bt_main2_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:text="Login"/>
-
-    <!--todo: add progressbar in here?-->
-
-    <Button
-        android:id="@+id/bt_main2_createnewfamilyaccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:text="Or create a new family account"/>
 
 </LinearLayout>

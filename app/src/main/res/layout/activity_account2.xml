@@ -19,7 +19,7 @@
         android:text="Here you can create a new family account"/>
 
     <TextView
-        android:id="@+id/tv_familyname"
+        android:id="@+id/tv_account2_familyname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -29,7 +29,7 @@
         android:text="Familyname"/>
 
     <EditText
-        android:id="@+id/et_familyname"
+        android:id="@+id/et_account2_familyname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -38,7 +38,7 @@
         android:hint="                                                             "/>
 
     <TextView
-        android:id="@+id/tv_admin_email_address"
+        android:id="@+id/tv_account2_admin_email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -48,7 +48,7 @@
         android:text="Admin email address"/>
 
     <EditText
-        android:id="@+id/et_admin_email_address"
+        android:id="@+id/et_account2_admin_email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -57,7 +57,7 @@
         android:hint="                                                             "/>
 
     <TextView
-        android:id="@+id/tv_password"
+        android:id="@+id/tv_account2_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -67,7 +67,7 @@
         android:text="Password"/>
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_account2_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -76,7 +76,7 @@
         android:hint="                                                             "/>
 
     <TextView
-        android:id="@+id/tv_password_confirm"
+        android:id="@+id/tv_account2_password_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -86,7 +86,7 @@
         android:text="Password confirm"/>
 
     <EditText
-        android:id="@+id/et_password_confirm"
+        android:id="@+id/et_account2_password_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -95,7 +95,7 @@
         android:hint="                                                             "/>
 
     <Button
-        android:id="@+id/bt_create_account"
+        android:id="@+id/bt_account2_create_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
