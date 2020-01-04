@@ -164,7 +164,7 @@
         android:layout_width="274dp"
         android:layout_height="149dp"
         android:background="#25657F86"
-        app:layout_constraintBottom_toTopOf="@+id/login2"
+        app:layout_constraintBottom_toTopOf="@+id/iv_relation_avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
