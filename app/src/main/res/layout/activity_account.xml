@@ -1,167 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cl_account_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <EditText
-        android:id="@+id/et_account_password"
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="24dp"
-
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_account_familyname" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Here you can create a new family account"/>
 
     <TextView
         android:id="@+id/tv_account_familyname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Familyname"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Familyname"/>
 
     <EditText
         android:id="@+id/et_account_familyname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="24dp"
-
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_account_familyname" />
-
-    <EditText
-        android:id="@+id/et_account_confirmpassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="24dp"
-
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_account_familyname" />
-
-    <TextView
-        android:id="@+id/tv_account_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin email adress"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_account_admin_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Admin email address"/>
+
+    <EditText
+        android:id="@+id/et_account_admin_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
 
     <TextView
         android:id="@+id/tv_account_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
-
-    <TextView
-        android:id="@+id/tv_account_confirmpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password confirm"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
-
-    <TextView
-        android:id="@+id/tv_account_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Here you can create a new family account"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Password"/>
 
     <EditText
-        android:id="@+id/et_account_email"
-        android:layout_width="0dp"
+        android:id="@+id/et_account_password"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_account_password_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Password confirm"/>
+
+    <EditText
+        android:id="@+id/et_account_password_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
 
     <Button
-        android:id="@+id/bt_account_create"
-        android:layout_width="wrap_content"
+        android:id="@+id/bt_account_create_account"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="84dp"
-        android:enabled="false"
-        android:text="Create"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Create!"/>
 
-    <ProgressBar
-        android:id="@+id/pb_account_loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        tools:layout_editor_absoluteX="206dp"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,225 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_add_create_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Create a new ....family member?"/>
+
+    <ImageView
+        android:id="@+id/iv_add_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:id="@+id/tv_add_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Firstname"/>
+
+    <EditText
+        android:id="@+id/et_add_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add_family_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Family name"/>
+
+    <EditText
+        android:id="@+id/et_add_family_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Date of birth"/>
+
+    <EditText
+        android:id="@+id/et_add_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
 
     <Button
-        android:id="@+id/bt_add_determineaddress"
-        android:layout_width="249dp"
-        android:layout_height="37dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="376dp"
-        android:enabled="false"
-        android:text="determine address on current location"
-        android:textSize="10sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/et_add_01"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="584dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/et_add_02"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_add_birthday"
-        android:layout_width="wrap_content"
+        android:id="@+id/bt_add_determine_address_location"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Birthday"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
-
-    <TextView
-        android:id="@+id/tv_add_zipcode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zipcode"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
-
-    <TextView
-        android:id="@+id/tv_add_street"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Street+house number"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
-
-    <TextView
-        android:id="@+id/tv_add_surname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Surname"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
-
-    <TextView
-        android:id="@+id/tv_add_firstname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First name"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282"
-        tools:layout_editor_absoluteX="84dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Determine address using current location"/>
 
     <TextView
         android:id="@+id/tv_add_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="City"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_add_firstname"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_add_firstname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="City"/>
 
     <EditText
-        android:id="@+id/et_add_03"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="536dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/et_add_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add_street_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Street + house number"/>
 
     <EditText
-        android:id="@+id/et_add_04"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/et_add_street_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
+
+    <TextView
+        android:id="@+id/tv_add_zip_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="ZIP code"/>
 
     <EditText
-        android:id="@+id/et_add_05"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="488dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/et_add_06"
-        android:layout_width="242dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="348dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="360dp"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/et_add_zip_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:hint="                                                             "/>
 
     <Button
         android:id="@+id/bt_add_add"
-        android:layout_width="232dp"
-        android:layout_height="40dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="116dp"
-        android:enabled="false"
-        android:text="   add   "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/pb_add_loading"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="206dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Add"/>
 
-    <ImageView
-        android:id="@+id/iv_add_avatar"
-        android:layout_width="169dp"
-        android:layout_height="167dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="44dp"
-        tools:srcCompat="@tools:sample/avatars[3]" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--todo: use progressbar in here?
+
+<ProgressBar
+    android:id="@+id/pb_add_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="64dp"
+    android:layout_marginBottom="64dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="206dp" />
+-->
+
+</LinearLayout>
