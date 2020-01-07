@@ -4,9 +4,11 @@ package com.example.familytracker.dataLayer;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
@@ -26,6 +28,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AccountDbManager {
 
@@ -53,6 +56,11 @@ public class AccountDbManager {
 
         HashMap headers = new HashMap();
         headers.put("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        String credentials = "app:b.EUGOpksfkIxf.Gz6WQBbpOSvwjjtA";
+        String auth = "Basic "
+                + Base64.encodeToString(credentials.getBytes(),
+                Base64.NO_WRAP);
+        headers.put("Authorization", auth);
 
 // body fixen
         JSONObject params = new JSONObject();
@@ -101,14 +109,27 @@ public class AccountDbManager {
 
                         }
                     }
+
+
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
                         VolleyLog.e("Error: ", error.getMessage());
                     }
-                });
+                }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                //headers.put("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                String credentials = "familytrackerapp:b.lvi68jphAS5y.626ejKTx6o2cRlqX";
+                String auth = "Basic "
+                        + Base64.encodeToString(credentials.getBytes(),
+                        Base64.NO_WRAP);
+                headers.put("Authorization", auth);
+                return headers;
+            }
+        };
 
         queue.add(jsObjRequest);
 
