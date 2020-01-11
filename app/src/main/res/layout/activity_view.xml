@@ -31,7 +31,7 @@
         android:layout_marginRight="20dp"
         android:textSize="15sp"
         android:textColor="#000000"
-        android:text="View family tree"/>
+        android:text="@string/view_tree"/>
 
     <Button
         android:id="@+id/bt_view_add_member"
@@ -42,6 +42,6 @@
         android:layout_marginRight="20dp"
         android:textSize="15sp"
         android:textColor="#000000"
-        android:text="Add new member"/>
+        android:text="@string/add_new_member"/>
 
 </LinearLayout>
