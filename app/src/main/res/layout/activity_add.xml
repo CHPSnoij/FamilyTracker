@@ -15,7 +15,7 @@
         android:padding="20dp"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:text="Create a new ....family member?"/>
+        android:text="@string/add_member"/>
 
     <ImageView
         android:id="@+id/iv_add_avatar"
@@ -33,7 +33,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Firstname"/>
+        android:text="@string/firstname"/>
 
     <EditText
         android:id="@+id/et_add_first_name"
@@ -52,7 +52,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Family name"/>
+        android:text="@string/family_name"/>
 
     <EditText
         android:id="@+id/et_add_family_name"
@@ -71,7 +71,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Date of birth"/>
+        android:text="@string/dob"/>
 
     <EditText
         android:id="@+id/et_add_dob"
@@ -91,7 +91,7 @@
         android:layout_marginRight="20dp"
         android:textSize="15sp"
         android:textColor="#000000"
-        android:text="Determine address using current location"/>
+        android:text="@string/Retrieve_location"/>
 
     <TextView
         android:id="@+id/tv_add_city"
@@ -101,7 +101,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="City"/>
+        android:text="@string/city"/>
 
     <EditText
         android:id="@+id/et_add_city"
@@ -120,7 +120,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Street + house number"/>
+        android:text="@string/Street_number"/>
 
     <EditText
         android:id="@+id/et_add_street_number"
@@ -139,7 +139,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="ZIP code"/>
+        android:text="@string/zip_code"/>
 
     <EditText
         android:id="@+id/et_add_zip_code"
@@ -159,7 +159,7 @@
         android:layout_marginRight="20dp"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:text="Add"/>
+        android:text="@string/add"/>
 
 <!--todo: use progressbar in here?
 

@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">FamilyTracker</string>
+
+    // activity_main
+    <string name="welcome">Welcome to Family Tracker</string>
+    <string name="please_login">Please login with your family account</string>
+    <string name="family_name">Family name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new">Or create a new family account</string>
+
+    // activity_account
+    <string name="create_here">Create your new family account here</string>
+    <string name="admin_email">Admin email address</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="create">Create!</string>
+
+    //activity_add
+    <string name="add_member">Add a family member</string>
+    <string name="firstname">Firstname</string>
+    <string name="dob">Date of birth</string>
+    <string name="Retrieve_location">Retrieve location for adding address</string>
+    <string name="city">City</string>
+    <string name="Street_number">Street and number </string>
+    <string name="zip_code">ZIP-code</string>
+    <string name="add">Add</string>
+
+
+
+
+
+
 </resources>

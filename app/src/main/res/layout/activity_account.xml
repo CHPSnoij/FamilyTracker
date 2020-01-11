@@ -16,7 +16,7 @@
         android:padding="20dp"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:text="Here you can create a new family account"/>
+        android:text="@string/create_here"/>
 
     <TextView
         android:id="@+id/tv_account_familyname"
@@ -26,7 +26,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Familyname"/>
+        android:text="@string/family_name"/>
 
     <EditText
         android:id="@+id/et_account_familyname"
@@ -45,7 +45,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Admin email address"/>
+        android:text="@string/admin_email"/>
 
     <EditText
         android:id="@+id/et_account_admin_email_address"
@@ -64,7 +64,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Password"/>
+        android:text="@string/password"/>
 
     <EditText
         android:id="@+id/et_account_password"
@@ -83,7 +83,7 @@
         android:paddingLeft="40dp"
         android:textSize="17sp"
         android:textColor="#000000"
-        android:text="Password confirm"/>
+        android:text="@string/password_confirm"/>
 
     <EditText
         android:id="@+id/et_account_password_confirm"
@@ -103,6 +103,6 @@
         android:layout_marginRight="20dp"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:text="Create!"/>
+        android:text="@string/create"/>
 
 </LinearLayout>
