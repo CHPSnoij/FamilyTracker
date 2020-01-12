@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        context = this.getApplicationContext();
-        buisnessController = new BuisnessController(context);
-        accountManager = buisnessController.getAccountManager();
+//        context = this.getApplicationContext();
+//        buisnessController = new BuisnessController(context);
+//        accountManager = buisnessController.getAccountManager();
 
         addButton = (Button) findViewById(R.id.bt_main_createnewfamilyaccount) ;
         addButton.setOnClickListener(new View.OnClickListener() {

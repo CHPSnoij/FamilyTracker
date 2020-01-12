@@ -49,7 +49,7 @@ public class AccountDbManager {
     }
 
     public void createAccount(Account account){
-        volley.sendRequest("CREATE (n:Account{ Username: "+account.getUsername()+", Password: "+account.getPassword()+" }) RETURN id(n)");
+        volley.sendRequest("CREATE (n:Account{ Username:'"+account.getUsername()+"', Password:'"+account.getPassword()+"' }) RETURN id(n)");
 
     }
 }
