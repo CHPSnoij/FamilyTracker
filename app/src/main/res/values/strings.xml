@@ -19,7 +19,7 @@
     <string name="add_member">Add a family member</string>
     <string name="firstname">Firstname</string>
     <string name="dob">Date of birth</string>
-    <string name="Retrieve_location">Retrieve location for adding address</string>
+    <string name="Retrieve_location">Use location</string>
     <string name="city">City</string>
     <string name="Street_number">Street and number </string>
     <string name="zip_code">ZIP-code</string>
