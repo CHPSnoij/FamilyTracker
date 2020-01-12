@@ -4,6 +4,7 @@
     // activity_main
     <string name="welcome">Welcome to Family Tracker</string>
     <string name="please_login">Please login with your family account</string>
+    <string name="username">Username</string>
     <string name="family_name">Family name</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -31,6 +32,6 @@
 
     //activity_view
     <string name="view_tree">View family tree</string>
-    <string name="add_new_member">Add new member(wat moet hier staan?)</string>
+    <string name="add_new_member">Add new member</string>
 
 </resources>
