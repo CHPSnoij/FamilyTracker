@@ -10,10 +10,10 @@
     <string name="create_new">Or create a new family account</string>
 
     // activity_account
-    <string name="create_here">Create your new family account here</string>
+    <string name="create_here">Create your new family account</string>
     <string name="admin_email">Admin email address</string>
     <string name="password_confirm">Confirm password</string>
-    <string name="create">Create!</string>
+    <string name="create">Create !</string>
 
     //activity_add
     <string name="add_member">Add a family member</string>
